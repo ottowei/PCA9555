@@ -236,7 +236,7 @@ void loop()
                      Serial.println("Chip 1 Port1 Pin5 Off");
                      break;
                  case 1:
-                     write_io (chip1, OUT_P0, B00100000);
+                     write_io (chip1, OUT_P1, B00100000);
                      Serial.println("Chip 1 Port1 Pin5 On");
                      break;
               }
@@ -449,7 +449,7 @@ void loop()
                      Serial.println("Chip 2 Port1 Pin5 Off");
                      break;
                  case 1:
-                     write_io (chip2, OUT_P0, B00100000);
+                     write_io (chip2, OUT_P1, B00100000);
                      Serial.println("Chip 2 Port1 Pin5 On");
                      break;
               }
@@ -492,8 +492,8 @@ void loop()
 { 
   Serial.print("chip=");
   Serial.println(a);
-  Serial.println(command);
-  Serial.println(value1);
+  //Serial.println(command);
+  //Serial.println(value1);
   if(a==32){
   Wire.beginTransmission(0x20);
   //Serial.println("Chip 1 Tx");
